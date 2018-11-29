@@ -1,0 +1,29 @@
+---
+name: Colin F. Doms
+position: "Data Scientist"
+address: "USA"
+profilepic: cfd13.jpg
+email: "colindoms@gmail.com"
+twitter: colindoms
+github: cdoms
+linkedin: cdoms
+date: "`r format(Sys.time(), '%B %Y')`"
+aboutme: "Colin is a data scientist with experience in B2B settings and a background in causal inference from training in the social sciences."
+output: vitae::twentyseconds
+---
+```{r setup, echo = FALSE}
+library(tinytex)
+library(knitr)
+library(tidyverse)
+library(vitae)
+options(tinytex.verbose = TRUE)
+```
+
+# Some stuff about me
+
+ * I have a master's from Columbia University.
+ * I was recently published in *Scientific Reports*.
+ * I started an S-Corp while freelancing and am looking to use my technical skills in a new position with what I learned about business in a team environment.
+ 
+# Education
+
