@@ -1,6 +1,6 @@
 ---
 name: Colin F. Doms
-position: "Data Scientist"
+position: "Senior Data Scientist"
 address: "USA"
 email: "colindoms@gmail.com"
 profilepic: "cfd13.jpeg"
