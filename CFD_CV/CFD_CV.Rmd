@@ -1,6 +1,6 @@
 ---
 name: Colin F. Doms
-position: "Senior Data Scientist"
+position: "Data Scientist"
 address: "USA"
 email: "colindoms@gmail.com"
 profilepic: "cfd13.jpeg"
@@ -21,22 +21,40 @@ library(tibble)
 options(tinytex.verbose = TRUE)
 ```
 
+```{r, echo = FALSE, include = FALSE, warning = FALSE, message=FALSE}
+entry <- function(title, organization, place, duration){
+  tribble(
+    ~name, ~event, ~location,  ~year,
+    title, organization, place, duration) %>%
+    detailed_entries(what = name,
+                     with = event,
+                     where = location,
+                     when = year)
+}
+
+```
+
 # Some stuff about me
 
  * I have a master's from Columbia University.
  * I was recently published in *Scientific Reports*.
  * I started an S-Corp while freelancing and am looking to use my technical skills in a new position with what I learned about business in a team environment.
  
+# Experience
+```{r experience}
+entry("Lead Adjunct Associate Faculty", "New York, NY", "Columbia University", "Present")
+
+entry(
+  "Data Scientist", "New York, NY", "IBM", "2015-2017")
+
+
+```
+
+ 
 # Education
 ```{r education}
-tribble(
-  ~name, ~event,~location, ~year,
-  "M.A., Quantitative Methods in the Social Sciences", "New York, NY", "Columbia University", 2015) %>%
-  detailed_entries(what = name,
-                   when = year,
-                   with = event,
-                   where = location)
-
+entry(
+  "M.A., Quantitative Methods in the Social Sciences", "New York, NY", "Columbia University", "2015")
 
 ```
 
